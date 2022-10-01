@@ -16,7 +16,6 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -26,6 +25,19 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* ----------------------Header------------------------- */
@@ -94,12 +106,14 @@ body {
 }
 
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--wite-color);
   background-color: var(--accent-background-color);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -108,19 +122,6 @@ body {
 }
 
 /* ---------------------------------Переваги------------------------------- */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 
 .advantages-list {
   list-style: none;
@@ -215,12 +216,13 @@ body {
 }
 
 .filter-btn {
-  font-family: "Roboto";
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
