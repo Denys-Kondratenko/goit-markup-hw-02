@@ -5,7 +5,6 @@
   --wite-color: #ffffff;
   --black-color: #000000;
   --sacondary-wite-color: rgba(255, 255, 255, 0.6);
-  --background-color: #f5f5f5;
   --background-color-wite: #ffffff;
   --sacondary-background-color: #2f303a;
   --team-background-color: #f5f4fa;
@@ -20,7 +19,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color-wite);
 }
 
 .link {
@@ -41,10 +40,6 @@ body {
 }
 
 /* ----------------------Header------------------------- */
-
-.header {
-  background-color: var(--background-color-wite);
-}
 
 .accent-logo {
   font-family: "Raleway", sans-serif;
@@ -149,6 +144,9 @@ body {
 
 /* ----------------------------------Team------------------------------ */
 
+.team {
+  background-color: var(--team-background-color);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -226,6 +224,7 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
+  color: var(--wite-color);
   background-color: var(--accent-background-color);
 }
 
